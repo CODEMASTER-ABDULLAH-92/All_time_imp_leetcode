@@ -7,18 +7,12 @@ Designed to be **simple, clean, and easy to navigate**, especially for revision 
 
 ## ✅ **Problem List**
 
-| S.No | Problem Name                    | Solution Link                                           |
-| ---- | ------------------------------- | ------------------------------------------------------- |
-| 1    | Contains Duplicate              | [View Solution](./solutions/contains-duplicate.cpp)     |
-| 2    | Two Sum                         | [View Solution](./solutions/two-sum.cpp)                |
-| 3    | Valid Anagram                   | [View Solution](./solutions/valid-anagram.cpp)          |
-| 4    | Best Time to Buy and Sell Stock | [View Solution](./solutions/best-time-stock.cpp)        |
-| 5    | Valid Parentheses               | [View Solution](./solutions/valid-parentheses.cpp)      |
-| 6    | Binary Search                   | [View Solution](./solutions/binary-search.cpp)          |
-| 7    | Merge Two Sorted Lists          | [View Solution](./solutions/merge-two-sorted-lists.cpp) |
-| 8    | Maximum Subarray                | [View Solution](./solutions/maximum-subarray.cpp)       |
-| 9    | Move Zeroes                     | [View Solution](./solutions/move-zeroes.cpp)            |
-| 10   | Majority Element                | [View Solution](./solutions/majority-element.cpp)       |
+| S.No | Problem Name                    | Topic  | Solution Link                                           |
+| ---- | ------------------------------- | -------------  | ------------------------------------------------------- |
+| 1    | Contains Duplicate              | Array  | [View Solution](./solutions/contains-duplicate.cpp)     |
+| 2    | Two Sum                         | Array  | [View Solution](./solutions/two-sum.cpp)                |
+| 4    | Best Time to Buy and Sell Stock 1 | Array  | [View Solution](./solutions/best-time-stock.cpp)        |
+
 
 > Add more rows as you solve more problems.
 
