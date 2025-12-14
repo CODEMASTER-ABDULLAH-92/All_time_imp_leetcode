@@ -27,19 +27,42 @@
 
 // Optimal Solution 
 
-class Solution {
-public:
-    bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        unordered_map<int, int> lastSeen;
+// class Solution {
+// public:
+//     bool containsNearbyDuplicate(vector<int>& nums, int k) {
+//         unordered_map<int, int> lastSeen;
 
-        for(int i = 0; i < nums.size(); i++){
-            if(lastSeen.count(nums[i]) > 0){
-                if(i - lastSeen[nums[i]] <= k){
-                    return true;
-                }
+//         for(int i = 0; i < nums.size(); i++){
+//             if(lastSeen.count(nums[i]) > 0){
+//                 if(i - lastSeen[nums[i]] <= k){
+//                     return true;
+//                 }
+//             }
+//             lastSeen[nums[i]] = i;
+//         }
+//         return false;
+//     }
+// };
+
+
+#include<iostream>
+#include<vector>
+#include<unordered_map>
+using namespace std;
+bool checkDuplicat(vector<int>& vec, int k){
+    unordered_map<int,int> lastseen;
+    for(int i = 0; i<vec.size(); i++){
+        if (lastseen.count(vec[i]) > 0)
+        {
+            if(i - lastseen[vec[i]] <= k){
+                return true;
             }
-            lastSeen[nums[i]] = i;
         }
-        return false;
+        lastseen[vec[i]] = i;
     }
-};
+    return false;
+}
+int main(){
+
+    return 0;
+}
