@@ -13,20 +13,20 @@
 #         return maxProfit
 
 
-from typing import List
-def best_time_to_buy_and_sell(nums: List[int]) -> int:
-    maxProfit = 0
-    minVal = nums[0]
+# from typing import List
+# def best_time_to_buy_and_sell(nums: List[int]) -> int:
+#     maxProfit = 0
+#     minVal = nums[0]
     
-    # For Min Val 
-    for idx in range(1, len(nums)):
-        if(minVal > nums[idx]):
-            minVal = nums[idx]
-        elif (maxProfit < nums[idx] - minVal):
-            maxProfit = nums[idx] - minVal
-    return maxProfit
-result = best_time_to_buy_and_sell([7,6,4,3,1])
-print(result)
+#     # For Min Val 
+#     for idx in range(1, len(nums)):
+#         if(minVal > nums[idx]):
+#             minVal = nums[idx]
+#         elif (maxProfit < nums[idx] - minVal):
+#             maxProfit = nums[idx] - minVal
+#     return maxProfit
+# result = best_time_to_buy_and_sell([7,6,4,3,1])
+# print(result)
 
 
 

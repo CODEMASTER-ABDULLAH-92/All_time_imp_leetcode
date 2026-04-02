@@ -1,34 +1,24 @@
-# from typing import List
-
-# class Solution:
-#     def twoSum(self, nums: List[int], target: int) -> List[int]:
-#         hashmap = {}
-        
-#         for i, num in enumerate(nums):
-#             complement = target - num
-            
-#             if complement in hashmap:
-#                 return [hashmap[complement], i]
-            
-#             hashmap[num] = i
-
-
 from typing import List
 def twoSum(li: List[int], target: int) -> List[int]:
     hashmap = {}
     
     for idx, val in enumerate(li):
         complement = target - val
-        
         if complement in hashmap:
             return [hashmap[complement], idx]
         
         hashmap[val] = idx
 
-result = twoSum([2,7,11,15], 9)
-# print(result)
+result = twoSum([2,7,11,15], 26)
+print(result)
 
 
+
+
+
+
+# The Real Condition
+# If the complement exists in hashmap, then we have already seen the number that pairs with current value to form the target.”
 
 # Notes 
 """
@@ -38,9 +28,14 @@ a = 2
 b = 7 
 
 2 + 7 = 9 
+
 b = target - a
 7 = 9 - 2
 7 = 7
+
+a = target - b
+2 = 9 - 7
+2 = 2
 
 2 , 7 == a, b
  
